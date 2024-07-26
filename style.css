@@ -1,0 +1,283 @@
+/* Add responsive design rules */
+*{
+    font-family: Times new roman;
+    box-sizing: border-box;
+}
+
+.body{
+    background-image: url(thumbnail/software\ 1.PNG);
+    background-size: cover;
+    background-position: center;
+}
+
+.header{
+    padding: 0px;
+    height: 110px;
+    background-color: rgb(8, 8, 54);
+    margin-bottom: 10px;
+}
+
+.web-top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.nav-bar{
+    text-align: center;
+    display: inline-block;
+    justify-content: space-between;
+    font-weight: bolder;
+    width: 620px;
+    height: 110px;
+    border-radius: 15px;
+}
+
+.nav-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+
+.nav-bar ul li{
+    width: 120px;
+    padding: 15px;
+}
+
+.nav-bar ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.active,.nav-bar ul li:hover{
+    background: #2bab0d;
+    border-radius: 3px;
+}
+
+.sub-menu-1{
+    display: none;
+}
+
+.nav-bar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: rgb(8, 8, 54);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.nav-bar ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+
+.nav-bar ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.nav-bar ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+
+.nav-bar ul li:hover .sub-menu-1 ul li a:hover{
+    color: #b2ff00;
+}
+
+.search-box{
+    display: inline-block;
+}
+
+.enter{
+    display: inline-block;
+    justify-content: end;
+}
+
+.enter-btn:hover{
+    cursor: pointer;
+    background-color: blueviolet;
+}
+
+.enter-btn:active{
+    cursor: pointer;
+    background-color: yellowgreen;
+}
+
+.search{
+    display: inline-block;
+    height: 110px;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.logo{
+    max-height: 110px;
+    border-radius: 15px;
+}
+
+.LOGO{
+    display: inline-block;
+}
+
+.contact{
+    font-weight: bolder;
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact:hover{
+    cursor: pointer;
+    color: yellowgreen;
+}
+
+.web-body{
+    color: aqua;
+}
+
+.featured,
+.trending{
+    font-size: 30px;
+    font-weight: bolder;
+    color: aqua  ;
+}
+
+.feat1,
+.feat2,
+.feat3,
+.feat4{
+    display: inline-block;
+}
+
+.feat1:hover,
+.feat2:hover,
+.feat3:hover,
+.feat4:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.feat1:active,
+.feat2:active,
+.feat3:active,
+.feat4:active{
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+.trend1,
+.trend2,
+.trend3,
+.trend4{
+    display: inline-block;
+}
+
+.trend1:hover,
+.trend2:hover,
+.trend3:hover,
+.trend4:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.trend1:active,
+.trend2:active,
+.trend3:active,
+.trend4:active{
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+.reference{
+    display: inline-block;
+}
+
+.reference ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.contact1{
+    display: inline-block;
+    margin-right: 60px;
+}
+
+.sites{
+    font-weight: bolder;
+    color: #fff;
+}
+
+.ocean:hover,
+.soft:hover,
+.gamesoft:hover,
+.steam:hover{
+    background-color: yellowgreen;
+    cursor: pointer;
+}
+
+.vid{
+    width: 100%;
+    height: 350px;
+    margin-left: 0px;
+    border-radius: 25px;
+}
+
+.BODY{
+    max-width: 100%;
+    background-color: rgb(12, 11, 105);
+    padding: 30px;
+}
+
+.web-bottom{
+    background-color: rgb(8, 8, 54);
+}
+
+@media (max-width: 768px) {
+    .nav-bar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-bar ul li {
+        width: 100%;
+        text-align: center;
+    }
+    .search-box {
+        width: 100%;
+        text-align: center;
+    }
+    .search-box input {
+        width: 90%;
+    }
+    .BODY {
+        margin-left: 0;
+        max-width: 100%;
+    }
+}
+
+.copyright{
+    color: #fff;
+    font-weight: bolder;
+}
+
+form label {
+    display: inline-block;
+    width: 100px;
+}
+
+form input, form textarea {
+    width: 300px;
+    padding: 5px;
+}
+
+form input[type="submit"] {
+    width: auto;
+    background: rgb(96, 145, 34);
+    color: #fff;
+    border: 0;
+    padding: 10px 20px;
+    cursor: pointer;
+}

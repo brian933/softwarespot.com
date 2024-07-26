@@ -1,0 +1,2 @@
+/*Adding the JavaScript to HTML files in the head*/
+<script src="script.js" defer></script>
